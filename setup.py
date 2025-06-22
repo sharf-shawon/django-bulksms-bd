@@ -14,7 +14,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="django-bulksms-bd",
-    version="0.1.0",
+    version="0.1.1",
     author="Sharfuddin Shawon",
     author_email="sharf@shawon.me",
     description="Django package for integrating with BulkSMSBD.net API",

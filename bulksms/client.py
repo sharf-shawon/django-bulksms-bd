@@ -58,6 +58,7 @@ class BulkSMSClient:
 
     def __init__(
         self,
+        base_url: Optional[str] = BASE_URL,
         api_key: Optional[str] = None,
         sender_id: Optional[str] = None,
         timeout: int = 30,
@@ -77,10 +78,14 @@ class BulkSMSClient:
             verify_ssl: Whether to verify SSL certificates
         """
         # Get configuration from Django settings or parameters
+        self.base_url = base_url or get_bulksms_setting('BASE_URL', self.BASE_URL)
         self.api_key = api_key or get_bulksms_setting('API_KEY')
         self.sender_id = sender_id or get_bulksms_setting('SENDER_ID')
         self.timeout = timeout
         self.verify_ssl = verify_ssl
+        self.SMS_ENDPOINT = f"{self.base_url}/smsapi"
+        self.SMS_MANY_ENDPOINT = f"{self.base_url}/smsapimany"
+        self.BALANCE_ENDPOINT = f"{self.base_url}/getBalanceApi"
 
         # Validate required configuration
         if not self.api_key:

@@ -3,7 +3,7 @@ Django BulkSMS BD Package
 
 A Django package for integrating with BulkSMSBD.net API for sending SMS messages.
 """
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Sharfuddin Shawon"
 __email__ = "sharf@shawon.me"
 

@@ -124,6 +124,7 @@ print(f"Account balance: {balance_info}")
 |---------|-------------|---------|
 | `BULKSMS_API_KEY` | Your BulkSMS BD API key | Required |
 | `BULKSMS_SENDER_ID` | Your approved sender ID | Required |
+| `BULKSMS_BASE_URL` | BulkSMS Base URL | https://bulksmsbd.net/api |
 | `BULKSMS_TIMEOUT` | Request timeout in seconds | 30 |
 | `BULKSMS_MAX_RETRIES` | Maximum retry attempts | 3 |
 | `BULKSMS_BACKOFF_FACTOR` | Retry backoff factor | 0.5 |
