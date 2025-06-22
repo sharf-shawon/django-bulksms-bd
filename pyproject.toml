@@ -81,7 +81,7 @@ testing = [
 
 [project.urls]
 Homepage = "https://github.com/sharf-shawon/django-bulksms-bd"
-Documentation = "https://django-bulksms-bd.readthedocs.io/"
+# Documentation = "https://django-bulksms-bd.readthedocs.io/"
 Repository = "https://github.com/sharf-shawon/django-bulksms-bd.git"
 "Bug Tracker" = "https://github.com/sharf-shawon/django-bulksms-bd/issues"
 Changelog = "https://github.com/sharf-shawon/django-bulksms-bd/blob/main/CHANGELOG.md"
