@@ -4,7 +4,6 @@ Django BulkSMS BD - Setup Configuration
 
 from setuptools import setup, find_packages
 import os
-from bulksms.__version__ import __version__
 # Read README file
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -15,7 +14,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="django-bulksms-bd",
-    version=__version__,
+    version="0.1.0",
     author="Sharfuddin Shawon",
     author_email="sharf@shawon.me",
     description="Django package for integrating with BulkSMSBD.net API",
