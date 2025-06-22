@@ -51,7 +51,7 @@ class BulkSMSClient:
     """
 
     # API endpoints
-    BASE_URL = "http://bulksmsbd.net/api"
+    BASE_URL = "https://bulksmsbd.net/api"
     SMS_ENDPOINT = f"{BASE_URL}/smsapi"
     SMS_MANY_ENDPOINT = f"{BASE_URL}/smsapimany"
     BALANCE_ENDPOINT = f"{BASE_URL}/getBalanceApi"
