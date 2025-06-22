@@ -1,0 +1,76 @@
+# Include documentation and configuration files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include requirements-dev.txt
+include setup.cfg
+include pyproject.toml
+include tox.ini
+include .pre-commit-config.yaml
+
+# Include package data
+recursive-include bulksms *.py
+recursive-include bulksms/templates *.html *.txt
+recursive-include bulksms/static *.css *.js *.png *.jpg *.gif *.ico
+recursive-include bulksms/locale *.po *.mo
+
+# Include management commands
+recursive-include bulksms/management *.py
+recursive-include bulksms/management/commands *.py
+
+# Include migrations
+recursive-include bulksms/migrations *.py
+
+# Include documentation
+recursive-include docs *.rst *.py *.txt *.md
+recursive-include docs/_static *.css *.js *.png *.jpg *.gif
+recursive-include docs/_templates *.html
+
+# Include examples
+recursive-include examples *.py *.md *.txt *.json
+
+# Include test files (optional, for source distributions)
+recursive-include tests *.py
+
+# Exclude development and build files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude .git*
+global-exclude .coverage
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .tox
+global-exclude *.egg-info
+global-exclude build
+global-exclude dist
+global-exclude .env
+global-exclude .venv
+global-exclude venv
+global-exclude env
+
+# Exclude IDE files
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *~
+
+# Exclude backup files
+global-exclude *.bak
+global-exclude *.orig
+global-exclude *.rej
+
+# Include type stubs if present
+recursive-include bulksms *.pyi
+
+# Include version file
+include bulksms/_version.py
+
+# Include any additional configuration files
+include .coveragerc
+include pytest.ini
+include mypy.ini
